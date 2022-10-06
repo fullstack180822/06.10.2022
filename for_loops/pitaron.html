@@ -9,19 +9,18 @@
     <hr>
     <script>
 
-        
-
-        for (x = 1; x <= 10; x++) {
-            document.write(`${x} <br />`)
-
-        }
-
-        document.write('finished!')
-
         // 1. print the numbers from 2 to 20 skip 1 each time <br />
         //    2,3,4,5 ... 20
+        for (x = 2; x <= 20; x++) {
+            document.write(`${x} <br />`)
+        }
+
         // 2. print the numbers from 30 to 20 skip -2 each time <br />
         //    30, 28, 26, 24, 22, 20
+        for (x = 30; x >= 20; x-=2) {
+            document.write(`${x} <br />`)
+        }
+
         // 3. input a number 
         //    print the factorial (atzeret)
         //    example:
@@ -32,13 +31,21 @@
         //          atz = atz * i
         //      -----------
         //      5! = 1 * 2 * 3 * 4 * 5
-        //      1,2,3,4,5
+        //      i will run from 1 to 5 --> 1,2,3,4,5
         //      atz = 1 
         //      atz = atz * i
         //      i=1: atz = atz * 1 = 1
         //      i=2: atz = 1 * 2 = 2
         //      i=3: atz = 2 * 3 = 6 
         //      .....
+        n = parseInt(prompt('Enter number: '))
+        atz = 1
+        document.write(`${n}! = 1`) // etgar
+        for (mone = 2; mone <= n; mone++) {
+            document.write(`*${mone}`) // etgar
+            atz = atz * mone
+        }
+        document.write(`=${atz}`)
 
 
     </script>
