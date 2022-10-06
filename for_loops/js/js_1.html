@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>loops</title>
+</head>
+
+<body>
+    <hr>
+    <script>
+
+        function buttonclick() {
+            var x1
+        }
+
+        var x; // global - less recommended
+        
+        let y; // global -- scoped variable
+
+        const app_version = 14.1;
+        app_version = 12; // ERROR!!
+        app_version++; // ERROR!!
+
+        const max_salary = 100000;
+
+        for (var mone = 1; mone <= 10; mone++) {
+            document.write(`${x} <br />`)
+            //let z; // scoped variable
+            //var outband = 1;
+            // y is known
+            let y1
+            for (var mone = 1; mone <= 10; mone++) {
+                document.write(`${x} <br />`)
+                //let z; // scoped variable
+                //var outband = 1;
+                // y is known
+                // y1 is known
+            }
+        }
+        // y1 is unknown
+
+        for (let mone = 1; mone <= 10; mone++) {
+            document.write(`${x} <br />`)
+            //let z; // scoped variable
+            //var outband = 1;
+            // y is known
+        }
+        // z is unknown
+        // outband is known
+        
+        document.write('finished!')
+
+  
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
